@@ -6,14 +6,72 @@ GENERAL PAGE RULES
     padding: 0;
     box-sizing: border-box;
 }
+section .container-fluid{
+    max-width: 90%;
+    margin: 0 auto;
+}
 /****************************
 NAVBAR RULES
 *****************************/
-nav.dark-grey, 
-footer section.dark-grey{
-    background-color:#2c3e50 ;
-    /* debug */
-    height: 50px;
+nav .col-12{
+    display: flex;
+    justify-content: space-between;
+}
+nav .col-12 h3{
+    margin: 1rem 0;
+    display: block;
+    align-self: center;
+    font-weight: 700;
+    flex-wrap: nowrap;
+}
+nav .hamburgher-btn{
+    align-self: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    min-width: 45px;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+}
+nav .hamburgher-btn i{
+    display: block;
+    align-self: center;
+    color: gray;
+}
+nav .col-12 a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    align-self: center;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+nav li {
+    margin: 0 1rem;
+    display: block;
+    align-self: center;
+    font-weight: 500;
+}
+nav li:hover{
+    text-decoration: underline white;
+}
+/* media queryes */
+@media all and (max-width: 680px){
+    nav ul {
+        display: none;
+    }
+}
+@media all and (min-width:678px){
+    nav .hamburgher-btn{
+        display: none;
+    }
+    section .container-fluid{
+        max-width: 90%;
+        margin: 0 auto;
+    }
 }
 .green{
     background-color: #1abc9c;
@@ -28,4 +86,9 @@ footer section.dark-grey{
     background-color: #3a546d;
     /* debug */
     min-height: 200px;
+}
+.dark-grey{
+    background-color: #2c3e50;
+    /* debug */
+    min-height: 50px;
 }
