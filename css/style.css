@@ -167,6 +167,9 @@ div.btn{
     margin: 2rem;
 
 }
+div.btn a i.fa-download{
+    margin-right: 0.5rem ;
+}
 /****************************
 CONTACT ME SECTION RULES
 *****************************/
