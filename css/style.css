@@ -77,11 +77,11 @@ header{
 /* desktop */
 @media all and (min-width: 992px){
     .navbar{
-        width: 80%;
+        width:100%;
         margin: 0 auto;
     }
     section .container-xs {
-            width: 70%;
+            width: 55%;
             margin: 0 auto;
         }
 }
