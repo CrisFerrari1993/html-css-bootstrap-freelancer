@@ -17,12 +17,15 @@ section {
 /****************************
 NAVBAR RULES
 *****************************/
-#nav {
+header{
     position: fixed;
-    width: 100%;
     top: 0;
     left: 0;
-    z-index: 1000;
+    width: 100%;
+
+}
+#nav {
+    width: 100%;
     height: 90px;
     background-color: #2c3e50;
 }
@@ -44,39 +47,6 @@ NAVBAR RULES
 #nav .navbar-collapse{
     flex-grow: 0;
 }
-/* nav .col-12{
-    display: flex;
-    justify-content: space-between;
-}
-nav .col-12 h3{
-    margin: 1rem 0;
-    display: block;
-    align-self: center;
-    font-weight: 700;
-    flex-wrap: nowrap;
-    font-size: 1.3rem;
-}
-nav .hamburgher-btn{
-    align-self: center;
-    border: 1px solid white;
-    border-radius: 5px;
-    min-width: 45px;
-    min-height: 40px;
-    display: flex;
-    justify-content: center;
-}
-nav .hamburgher-btn i{
-    display: block;
-    align-self: center;
-    color: gray;
-}
-nav .col-12 a{
-    color: white;
-    text-decoration: none;
-    display: block;
-    align-self: center;
-} */
-
 /* media queryes */
 /*  */
 @media all and (max-width:576px){
@@ -102,32 +72,10 @@ nav .col-12 a{
         width: 80%;
         margin: 0 auto;
     }
-    nav .hamburgher-btn {
-        display: none;
-    }
-
-    nav ul {
-        display: flex;
-    }
-
     section .container-xs {
         max-width: 80%;
         margin: 0 auto;
     }
-    nav ul{
-    display: flex;
-    list-style: none;
-    margin: 0;
-}
-    nav li {
-    margin: 0 0.2rem;
-    display: block;
-    align-self: center;
-    font-weight: 500;
-}
-    nav li:hover{
-    text-decoration: underline white;
-}
 }
 /* desktop */
 @media all and (min-width: 992px){
