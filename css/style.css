@@ -215,9 +215,7 @@ footer .a-white a{
     color: white;
     text-decoration: none;
 }
-footer .a-white{
-    margin: 2rem 0;
-}
+
 footer ul{
     display: flex;
     list-style: none;
