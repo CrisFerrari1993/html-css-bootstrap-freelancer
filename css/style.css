@@ -6,17 +6,44 @@ GENERAL PAGE RULES
     padding: 0;
     box-sizing: border-box;
 }
-section .container-xs{
-    width: 80%;
-    margin: 0 auto;
-}
 section {
     padding: 1rem 0;
+}
+#jumbotron{
+    margin-top: 90px;
+    padding: 0;
+    width: 100%;
 }
 /****************************
 NAVBAR RULES
 *****************************/
-nav .col-12{
+#nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 90px;
+}
+#nav .navbar-expand-lg{
+    background-color: #2c3e50;
+}
+#nav .navbar-brand{
+    color: white;
+    font-weight: 700;
+}
+#nav .nav-link{
+    color: white;
+}
+#nav .navbar-toggler{
+    border: 1px solid white;
+    color: white;
+    padding: 8px 15px;
+}
+#nav .navbar-collapse{
+    flex-grow: 0;
+}
+/* nav .col-12{
     display: flex;
     justify-content: space-between;
 }
@@ -26,6 +53,7 @@ nav .col-12 h3{
     align-self: center;
     font-weight: 700;
     flex-wrap: nowrap;
+    font-size: 1.3rem;
 }
 nav .hamburgher-btn{
     align-self: center;
@@ -46,23 +74,18 @@ nav .col-12 a{
     text-decoration: none;
     display: block;
     align-self: center;
-}
-nav ul{
-    display: flex;
-    list-style: none;
-    margin: 0;
-}
-nav li {
-    margin: 0 1rem;
-    display: block;
-    align-self: center;
-    font-weight: 500;
-}
-nav li:hover{
-    text-decoration: underline white;
-}
+} */
+
 /* media queryes */
-@media all and (max-width: 680px){
+/*  */
+@media all and (max-width:578px){
+    .navbar{
+        width: 100%;
+        margin: 0 auto;
+    }
+    nav .hamburgher-btn{
+        display: flex;
+    }
     nav ul {
         display: none;
     }
@@ -71,10 +94,49 @@ nav li:hover{
         margin: 0 auto;
     }
 }
-@media all and (min-width:678px){
-    nav .hamburgher-btn{
+/* tablet */
+@media all and (min-width:579px) {
+    .navbar{
+        width: 80%;
+        margin: 0 auto;
+    }
+    nav .hamburgher-btn {
         display: none;
     }
+
+    nav ul {
+        display: flex;
+    }
+
+    section .container-xs {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+    nav li {
+    margin: 0 0.2rem;
+    display: block;
+    align-self: center;
+    font-weight: 500;
+}
+    nav li:hover{
+    text-decoration: underline white;
+}
+}
+/* desktop */
+@media all and (min-width: 992px){
+    .navbar{
+        width: 80%;
+        margin: 0 auto;
+    }
+    section .container-xs {
+            width: 70%;
+            margin: 0 auto;
+        }
 }
 /****************************
 JUMBOTRON RULES
@@ -116,7 +178,7 @@ div .jumbo-txt ul{
     padding: 0;
 }
 .jumbo-txt li{
-    margin: 0 1rem;
+    margin: 0 0.2rem;
     display: block;
     align-self: center;
 }
@@ -173,16 +235,12 @@ div.btn a i.fa-download{
 /****************************
 CONTACT ME SECTION RULES
 *****************************/
-div.send-btn{
-    background-color: #1abc9c;
-    max-width: fit-content;
-    padding: 0.5rem;
-    border-radius: 5px;
-    margin: 5px 0;
+form.contact button{
+    margin: 1rem 0;
 }
-div.send-btn a{
-    color: white;
-    text-decoration: none;
+form.contact .form-control{
+    border:  none;
+    cursor: pointer;
 }
 #floatingTextarea2_border{
     border: none;
