@@ -9,11 +9,7 @@ GENERAL PAGE RULES
 section {
     padding: 1rem 0;
 }
-#jumbotron{
-    margin-top: 90px;
-    padding: 0;
-    width: 100%;
-}
+
 /****************************
 NAVBAR RULES
 *****************************/
@@ -92,6 +88,11 @@ header{
 /****************************
 JUMBOTRON RULES
 *****************************/
+#jumbotron {
+    margin-top: 90px;
+    padding: 0;
+    width: 100%;
+}
 div .jumbo-img{
     max-width: 45%;
     margin: 0 auto;
@@ -246,6 +247,7 @@ footer span{
     color: white;
     font-size: 0.7rem;
 }
+/* section colors */
 .black{
     color: black;
 }
